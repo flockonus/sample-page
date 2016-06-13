@@ -1,1 +1,55 @@
-<h1>Oi</h1>
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>The HTML5 diverse</title>
+    <meta name="description" content="just a sample page">
+    <meta name="author" content="minasan">
+
+    <!-- CSS in this order: external / relative / inline -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/colours.css">
+    <style>
+        #wrapper {
+            width: 70%;
+            padding: 20px 15%;
+            border: dotted 2px grey;
+        }
+        body {
+            background-image: url(./images/pattern.png);
+        }
+    </style>
+    <!--[if lt IE 9]>
+    <script src="/js/ie-conditional.js"></script>
+    <![endif]-->
+
+    <!-- JS in this order: external / relative / inline -->
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="js/relative1.js"></script>
+    <script>
+        console.log('is jquery lodaded?', !!window.$);
+        console.log('inline 1');
+    </script>
+</head>
+
+<body>
+<center>
+    <h1>Index page (default blue)</h1>
+    <p>
+        Just a sample description yada yada (default green)
+        <br><br>
+        <button type="button" class="btn btn-primary btn-lg">Bootstrap button</button>
+        <br><br>
+    </p>
+    <div id="wrapper">
+        <div id="content">#content div -- replace it 👀</div>
+    </div>
+</center>
+<script src="js/relative2.js"></script>
+<script>
+    console.log('inline 2 (body end)');
+</script>
+</body>
+</html>
