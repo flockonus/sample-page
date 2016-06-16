@@ -2,6 +2,6 @@ h1{
     color: blue;
 }
 
-body > center > p {
-    color: green;
+body p {
+    color: #008c0e;
 }
